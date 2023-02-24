@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "SEjDleP//uoo3Xf4Tu2JZmBML90yvA3WKVVJ3gkQWAw=",
+  "Source": "StructureOfCatalogs",
+  "BasePath": "_content/StructureOfCatalogs",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "StructureOfCatalogs\\wwwroot",
+      "Source": "StructureOfCatalogs",
+      "ContentRoot": "D:\\GitHub\\StructureOfCatalogs\\StructureOfCatalogs\\StructureOfCatalogs\\wwwroot\\",
+      "BasePath": "_content/StructureOfCatalogs",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
