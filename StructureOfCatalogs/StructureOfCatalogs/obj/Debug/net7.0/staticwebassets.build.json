@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SEjDleP//uoo3Xf4Tu2JZmBML90yvA3WKVVJ3gkQWAw=",
+  "Hash": "mCyHtAnjqTDqU0MGBGs+b6fUY5eFTTs9iqxcyGfvhBw=",
   "Source": "StructureOfCatalogs",
   "BasePath": "_content/StructureOfCatalogs",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "D:\\GitHub\\StructureOfCatalogs\\StructureOfCatalogs\\StructureOfCatalogs\\wwwroot\\css\\style.css",
+      "SourceId": "StructureOfCatalogs",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHub\\StructureOfCatalogs\\StructureOfCatalogs\\StructureOfCatalogs\\wwwroot\\",
+      "BasePath": "_content/StructureOfCatalogs",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
+    }
+  ]
 }
