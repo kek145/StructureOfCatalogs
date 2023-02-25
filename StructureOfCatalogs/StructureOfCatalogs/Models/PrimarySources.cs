@@ -1,6 +1,4 @@
-﻿using StructureOfCatalogs.Models;
-
-namespace StructureOfCatalogs.Models
+﻿namespace StructureOfCatalogs.Models
 {
     public class PrimarySources
     {

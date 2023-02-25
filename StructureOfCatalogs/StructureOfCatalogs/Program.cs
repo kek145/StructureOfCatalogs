@@ -1,3 +1,4 @@
+using StructureOfCatalogs.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,8 +12,8 @@ app.UseStaticFiles();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=CreationDigitalImages}/{action=Index}/{id?}");
 
-app.UseRouting();
+ClassWriteInTables.GetStatusDuplicateInTable();
 
 app.Run();

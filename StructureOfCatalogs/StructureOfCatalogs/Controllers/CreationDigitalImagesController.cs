@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 using StructureOfCatalogs.Models;
 
 namespace StructureOfCatalogs.Controllers
 {
-    public class HomeController : Controller
+    public class CreationDigitalImagesController : Controller
     {
         public IActionResult Index()
         {
@@ -13,16 +14,14 @@ namespace StructureOfCatalogs.Controllers
             };
             return View(model);
         }
-        [Route("Evidance")]
-        public IActionResult Evidance()
+        public IActionResult Evidence()
         {
             var model = new Evidence
             {
-                Name = "Evidance"
+                Name = "Evidence"
             };
             return View(model);
         }
-        [Route("Resources")]
         public IActionResult Resources()
         {
             var model = new Resources
@@ -31,7 +30,7 @@ namespace StructureOfCatalogs.Controllers
             };
             return View(model);
         }
-        [Route("Primary-Sources")]
+        [Route("/CreationDigitalImages/Resources/PrimarySources")]
         public IActionResult PrimarySources()
         {
             var model = new PrimarySources
@@ -40,7 +39,7 @@ namespace StructureOfCatalogs.Controllers
             };
             return View(model);
         }
-        [Route("Secondary-Sources")]
+        [Route("/CreationDigitalImages/Resources/SecondarySources")]
         public IActionResult SecondarySources()
         {
             var model = new SecondarySources
@@ -49,7 +48,6 @@ namespace StructureOfCatalogs.Controllers
             };
             return View(model);
         }
-        [Route("Graphic-Products")]
         public IActionResult GraphicProducts()
         {
             var model = new GraphicProducts
@@ -58,7 +56,7 @@ namespace StructureOfCatalogs.Controllers
             };
             return View(model);
         }
-        [Route("Process")]
+        [Route("/CreationDigitalImages/GraphicProducts/Process")]
         public IActionResult Process()
         {
             var model = new Process
@@ -67,7 +65,7 @@ namespace StructureOfCatalogs.Controllers
             };
             return View(model);
         }
-        [Route("Final-Product")]
+        [Route("/CreationDigitalImages/GraphicProducts/FinalProduct")]
         public IActionResult FinalProduct()
         {
             var model = new FinalProduct
@@ -76,6 +74,5 @@ namespace StructureOfCatalogs.Controllers
             };
             return View(model);
         }
-
     }
 }

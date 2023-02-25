@@ -1,0 +1,29 @@
+@using StructureOfCatalogs.Models;
+@using StructureOfCatalogs.Models.Data;
+@{
+    Layout = null;
+}
+
+@model Resources
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Structure Of Catalogs</title>
+    </head>
+    <body>
+        <h1>"Folder - @Model.Name"</h1>
+        @{
+            using(ApplicationContext db = new ApplicationContext())
+            {
+                var creation = db.Resources.ToList();
+                foreach(var item in creation)
+                {
+                    <a href="/CreationDigitalImages/Resources/@item.Name">@item.Name</a><br>
+                }
+            }
+        }
+    </body>
+</html>
